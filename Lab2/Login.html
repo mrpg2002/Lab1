@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 50px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 0px;
+            border: 2px solid black;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 999; 
+        }
+
+        .back-button button {
+            background-color:white;
+            color:black;
+            border: 2px solid black;;
+            padding: 10px 15px;
+            cursor: pointer;
+            
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            width: 50%;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e90ff;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">
+        <button onclick="window.location.href='Criação do login.html'">Back</button>
+    </div>
+    <div class="container">
+        <form action="#" method="post">
+            <h1>Login</h1>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Login">
+            <a href="Forgot password.html">Forgot password?</a>
+
+        </form>
+    </div>
+</body>
+</html>
